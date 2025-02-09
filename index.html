@@ -1,0 +1,830 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css 6</title>
+    <script src="https://kit.fontawesome.com/0314757302.js" crossorigin="anonymous"></script>
+    <style>
+        body{
+            margin: 0;
+            padding: 0.5%;
+            width: 100%;
+            overflow-x: hidden;
+            font-size: 16px;
+        }
+        
+        div{
+            width: 100%;
+        }
+        .nav{
+            display: grid;
+            grid-template-columns: 0.8fr 2.3fr 1fr;
+            margin-bottom: 30px;
+        }
+        .nav img{
+            float: right;
+        }
+        .nav .ul-first{
+            text-align: center;
+            color: black;
+        }
+        .nav .ul-first .urls{
+            color: #0065FE;
+        }
+        .nav .ul-first li a, select{
+            text-decoration: none;
+            color: black;
+            border: none;
+            font-size: 1rem;
+            font-weight: 700;
+        }
+        .nav .ul-second a{
+            text-decoration: none;
+            color: #0065FE;
+        }
+        .nav .ul-second .free{
+            color: white;
+            padding: 5% 8%;
+            background-color: #0065FE;
+            border-radius: 20px;
+        }
+        .nav ul li{
+            font-weight: 700;
+            margin-right: 5%;
+            display: inline;
+        }
+        .head{
+            display: grid;
+            grid-template-rows: 2fr 1fr;
+            place-items: center;
+            gap: 30px;
+        }
+        .head section{
+            width: 70%;
+            margin-top: -10%;
+            text-align: center;
+            place-items: center;
+            margin-top: -10%;
+        }
+        .header .p-first{
+            font-size: 48px;
+        }
+        .header .p-first span{
+            color: #0065FE;
+            position: relative;
+        }
+        .p-first span::after{
+            content: url(./Vector\ 3.png);
+            position: absolute;
+            top: 50%;
+            left: 20%;
+            width: 175px;
+            height: 20px;
+        }
+        .header .p-second{
+            width: 62%;
+            text-align: center;
+        }
+        .header ul{
+
+            width: 60%;
+        }
+        .header ul li{
+            display: inline;
+            text-align: center;
+        }
+        .header ul li a{
+            margin-right: 10%;
+            text-decoration: none;
+            color: #0065FE;
+        }
+        .header .signup{
+            color: white;
+            padding: 2% 7%;
+            background-color: #0065FE;
+            border-radius: 20px;
+        }
+        .group-three{
+            width: 100%;
+        }
+        .group-three img{
+            width: 100%;
+        }
+        .group-four {
+            background-color: #F9FBFD;
+            display: grid;
+            grid-template-columns: 1.8fr 3.2fr;
+        }
+        .group-four .first{
+            font-size: 40px;
+            margin-left: 20%;
+        }
+        .group-four .first p{
+            width: 70%;
+        }
+        .group-four .first span{
+            color: #0065FE;
+        }
+        .group-four .second{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            padding-top: 3.5%;
+        }
+        .group-four .second p{
+            width: 60%;
+        }
+        .group-four .second p span{
+            font-size: 32px;
+        }
+        .group-five{
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 0px;
+            
+        }
+        .group-five .first{
+            padding-left: 20%;
+        }
+        .group-five .first h1{
+            font-size: 40px;
+        }
+        .group-five .first p{
+            width: 90%;
+        }
+        .group-five .second{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            gap: 20px;
+            width: 80%;
+            padding: 5%;
+        }
+        .group-five .second h1{
+            font-size: 32px;
+        }
+        .group-six{
+            text-align: center;
+            place-items: center;
+        }
+        .group-six h1{
+            font-size: 40px;
+            position: relative;
+        }
+        .group-six section{
+            width: 50%;
+        }
+        .group-six h1 span{
+            color: #0065FE;
+        }
+        .group-six h1::after{
+            content: url(./Line\ 70.png);
+            position: absolute;
+            top: 20%;
+            left: 10%;
+        }
+        .group-six p{
+            width: 70%;
+            text-align: center;
+            place-self: center;
+            margin-top: -3%;
+        }
+        .group-seven{
+           display: flex;
+           justify-content: center;
+           width: 100%;
+        }
+        .group-seven section{
+            border: 1px solid #005AE2;
+            padding: 2% 5% 5% 5%;
+            height: 280px;
+            border-radius: 10px;
+            margin-top: 5%;
+            font-size: 14px;
+        }
+        .group-seven section i{
+            color: #005AE2;
+        }
+        .group-seven .first{
+            margin-right: -2%;
+        }
+        .group-seven .second{
+            height: 380px;
+            background-color: #1E3448;
+            color: white;
+            margin-top: 0%;
+            padding: 5%;
+            z-index: 1;
+        }
+        .group-seven .second i{
+            color: white;
+        }
+        .group-seven .third{
+            margin-left: -2%;
+            z-index: -1;
+        }
+        .group-eight{
+            /*background-color: #1e3448;*/
+            text-align: center;
+            padding: 2%;
+        }
+        .group-eight section{
+            width: 93%;
+        }
+        .group-eight ul li{
+            display: inline;
+            width: 50%;
+        }
+        .group-eight ul li a{
+            text-decoration: none;
+            margin-right: 1%;
+            padding: 1%;
+            background-color: white;
+            color: #0065FE;
+            border: 1px solid #0065FE;
+            border-radius: 20px;
+        }
+        .group-eight .link{
+            color: white;
+            background-color: #0065FE;
+            padding: 1% 2%;
+        }
+        .group-nine{
+            background-color: #1E3448;
+            height: 80vh;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            z-index: 1;
+        }
+        .group-nine section{
+            height: 50%;
+            width: 30%;
+            display: grid;
+            grid-template-rows: 1fr 1fr;
+            border: 1px solid blue;
+            background-color: white;
+            color: #005AE2;
+            padding: 2%;
+            border-radius: 10px;
+        }
+        
+        .group-nine input::placeholder{
+            color: #3284FF;
+        }
+        .group-nine input, .select{
+            color: #3284FF;
+            border-radius: 10px;
+            border: 1px solid #3284FF;
+            padding: 3%;
+            width: 48%;
+            font-size: 0.9rem;
+        }
+        .group-nine .select{
+            margin-right: 3%; 
+           font-weight: normal;
+           width: 48%;
+           
+        }
+        .group-nine .alias{
+            width: 40%;
+            
+        }
+        .group-nine .paste{
+            width: 93%;
+        }
+        .group-nine section .top-form{
+            display: grid;
+            grid-template-rows: 1fr 1fr;
+        }
+        .group-nine .bottom-form{
+            display: grid;
+            grid-template-rows: 1fr 1fr;
+            
+            height: 40%;
+            margin-top: 2%;
+        }
+        .bottom-form button{
+            border-radius: 10px;
+            background-color: #005AE2;
+            color: white;
+            padding: 0px;
+            border: none;
+        }
+        .bottom-form i{
+            color: gold;
+        }
+        .bottom-form p{
+            color: #4991FF;
+        }
+        .group-nine ::before{
+            position: absolute;
+            content: url(./vector\ 1.png);
+            left: 1px;
+            top: 1px;
+            z-index: -1;
+            opacity: 0.1;
+
+        }
+        .group-nine ::after{
+            content: url(./vector\ 2.png);
+            position: absolute;
+            right: 1px;
+            top: 1px;
+            z-index: -1;
+            opacity: 0.1;
+        }
+        .group-ten{
+            display: grid;
+            grid-template-rows: 1fr 1.5fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+            position: relative;
+            z-index: 1;
+        }
+        .group-ten h1{
+            text-align: center;
+            position: relative;
+        }
+        .group-ten h1::after{
+            content: url(./Line\ 70.png);
+            position: absolute;
+            top: -10%;
+            left: -7%;
+            opacity: 1;
+        }
+        .group-ten section{
+            width: 60%;
+            place-self: center;
+            z-index: 1;
+            border-bottom: 1px solid #D6D6D6;
+        }
+        .group-ten span{
+            float: right;
+            font-weight: 900;
+            font-size: 20px;
+        }
+        .group-ten ::before{
+            content: url(./vector\ 4.png);
+            position: absolute;
+            top: 1px;
+            left: 1px;
+            opacity: 0.06;
+            z-index: -1;
+        }
+        .group-ten ::after{
+            content: url(./vector\ 5.png);
+            position: absolute;
+            bottom: 1px;
+            right: 1px;
+            opacity: 0.06;
+            z-index: -1;
+        }
+        .group-eleven{
+            background-color: #1E3448;
+            text-align: center;
+            position: relative;
+            z-index: 1;
+            overflow: hidden;
+        }
+        .group-eleven h2{
+            color: white;
+            font-size: 40px;
+        }
+        .group-eleven section{
+            padding: 5% 0% 5% 0%;
+        }
+        .group-eleven button{
+            padding: 1% 5%;
+            background-color: #005AE2;
+            color: white;
+            border-radius: 20px;
+            border: none;
+        }
+        .group-eleven ::before{
+            content: url(./vector\ 7.png);
+            position: absolute;
+            top: 1px;
+            left: -5%;
+            z-index: -1;
+            opacity: 0.3;
+        }
+        .group-eleven ::after{
+            content: url(./vector\ 6.png);
+            position: absolute;
+            bottom: 1px;
+            right: -20%;
+            z-index: -1;
+            opacity: 0.3;
+        }
+        .group-twelve{
+            display: flex;
+            padding: 5%;
+            justify-content: center;
+            
+        }
+        .vector{
+            position: relative;
+            z-index: 1;
+        }
+        .vector ::before{
+            content: url(./vector\ 8.png);
+            position: absolute;
+            top: 1px;
+            left: 1px;
+            z-index: -1;
+            opacity: 0.02;
+        }
+        .vector ::after{
+            content: url(./vector\ 9.png);
+            position: absolute;
+            bottom: 1px;
+            right: 1px;
+            z-index: -1;
+            opacity: 0.02;
+        }
+        .group-twelve section{
+            width: 60%;
+        }
+        .group-twelve .question{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+        }
+        .group-twelve .question .last{
+            display: grid;
+            grid-template-rows: 1fr 1fr;
+        }
+        .group-twelve .question article{
+            width: 100%;
+            height: 90%;
+            overflow: hidden;
+            padding: 2%;
+        }
+        .group-twelve article h5{
+            font-weight: bolder;
+
+        }
+        .group-twelve article ul li{
+            list-style: none;
+            margin-left: -20%;
+        }
+        .group-twelve article ul li a{
+            text-decoration: none;
+            color: black;
+        }
+        .group-twelve .empty{
+            display: grid;
+            grid-template-rows: 1fr 3fr;
+            height: 100%;
+            width: 20%;
+            display: flex;
+            justify-content: center;
+            
+        }
+        .empty .last-icons{
+            
+            padding: 5% 0% 2% 10%;
+            width: 90%;
+            text-align: center;
+        }
+        .empty i{
+            margin-left: 5%;
+            color: black;
+            font-size: 24px;
+            
+        }
+        .address{
+            width: 95%;
+            text-align: right;
+            color: #112232;
+        }
+    </style>
+    
+</head>
+<body>
+    <div class="nav">
+        <section>
+        <img src="/assignments altschool/asset/logo 2.png" alt="logo">
+        </section>
+        <section>
+        <ul class="ul-first">
+            <li><a href="#" class="urls">My URLs</a></li>
+            <li><select>
+                <option value="Features">Features</option>
+            </select></li>
+            <li><a href="#">Pricing</a></li>
+            <li><a href="#">Analytics</a></li>
+            <li><a href="#">FAQs</a></li>
+        </ul>
+        </section>
+        <section>
+        <ul class="ul-second">
+            <li><a href="#">Log in</a></li>
+            <li><a href="#" class="free">Try for Free</a></li>
+        </ul>
+        </section>
+    </div>
+    <div class="head">
+    <section class="header">
+        <p class="p-first">Optimize Your Online Experience with Our Advanced <span>URL Shortening</span>
+             Solution</p>
+        <p class="p-second">Personalize your shortened URLs to align with your brand identity. 
+            Utilize custom slugs, branded links, and domain customization options to 
+            reinforce your brand presence and enhance user engagement.</p>
+            <ul>
+                <li><a href="#" class="signup">Sign Up</a></li>
+                <li><a href="#">Learn more</a></li>
+            </ul>
+    </section>
+    <section class="vector-two">
+        <img src="/assignments altschool/asset/div.png" alt="group 2">
+    </section>
+    </div>
+    <div class="group-three">
+        <img src="/assignments altschool/asset/flat.png" alt="group 3">
+    </div>
+    <div class="group-four">
+        <section class="first">
+            <p>One Stop. Four <span>Possibilities</span>.</p>
+        </section>
+        <section class="second">
+            <p><span>3M</span> <br>Active users</p>
+            <p><span>60M</span> <br>Links & QR codes created</p>
+            <p><span>1B</span><br> Clicked & Scanned connections</p>
+            <p><span>300K</span><br> App integrations</p>
+        </section>
+    </div>
+    <div class="group-five">
+        <section class="first">
+            <h1>Why Choose Scissors</h1>
+            <p>Scissors is the hub of everything that has to do with your link 
+                management. We shorten your URLs, allow you creating custom ones for
+                 your personal, business, event usage. Our swift QR code creation, 
+                 management and usage tracking with advance analytics for all of these
+                is second to none.</p>
+        </section>
+        <section class="second">
+            <article>
+                <img src="/assignments altschool/asset/Ellipse 2.png" alt="icon">
+                <h1>URL Shortening</h1>
+                <p>Scissor allows you to shorten URLs of your business, events. 
+                    Shorten your URL at scale, URL redirects.
+                </p>
+            </article>
+            <article>
+                <img src="/assignments altschool/asset/Frame 1000001695.png" alt="icon">
+                <h1>Custom URLs</h1>
+                <p>With Scissor, you can create custom URLs, with the length you want!
+                     A solution for socials and businesses.
+                    </p>
+            </article>
+            <article>
+                <img src="/assignments altschool/asset/Frame 1000001695 (1).png" alt="icon">
+                <h1>QR Codes</h1>
+                <p>Generate QR codes to your business, events. Bring your audience and 
+                    customers to your doorstep with this scan and go solution.
+                </p>
+            </article>
+            <article>
+                <img src="/assignments altschool/asset/data.png" alt="icon">
+                <h1>Data Analytics</h1>
+                <p>Receive data on the usage of either your shortened URL, custom URLs or 
+                    generated QR codes. Embedded to monitor progress.
+                </p>
+            </article>
+        </section>
+    </div>
+    <div class="group-six">
+        <section>
+            <h1>A <span>price perfect</span> for your needs.</h1>
+            <p>From catering for your personal, business, event, socials needs, you can be 
+                rest assured we have you in mind in our pricing.</p>
+        </section>
+    </div>
+    <div class="group-seven">
+        <section class="first">
+            <h4>Basic</h4>
+            <h1>Free</h1>
+            <p>Free plan for all users</p>
+            
+            <p><i class="fa-regular fa-circle-check"></i> Unlimited URL Shortening</p>
+            
+            <p><i class="fa-regular fa-circle-check"></i> Basic Link Analytics</p>
+            
+            <p><i class="fa-regular fa-circle-check"></i> Customizable Short Links</p>
+            
+            <p><i class="fa-regular fa-circle-check"></i> Standard Support</p>
+            
+            <p><i class="fa-regular fa-circle-check"></i> Ad-supported</p>
+        </section>
+        <section class="second">
+            <h4>Professional</h4>
+            <h1>$15/month</h1>
+            <p>Ideal for businness creators</p>
+            
+            <p><i class="fa-regular fa-circle-check"></i> Enhanced Link Analytics</p>
+           
+            <p> <i class="fa-regular fa-circle-check"></i> Custom Branded Domains</p>
+            
+            <p><i class="fa-regular fa-circle-check"></i> Advanced Link Customization</p>
+            
+            <p><i class="fa-regular fa-circle-check"></i> Priority Support</p>
+           
+            <p> <i class="fa-regular fa-circle-check"></i> Ad-free Experience</p>
+        </section>
+        <section class="third">
+            <h4>Teams</h4>
+            <h1>$25/month</h1>
+            <p>Share with up to 10 users</p>
+            
+            <p><i class="fa-regular fa-circle-check"></i> Team Collaboration</p>
+            
+            <p><i class="fa-regular fa-circle-check"></i> User Roles and Permissions</p>
+            
+            <p><i class="fa-regular fa-circle-check"></i> Enhanced Security</p>
+            
+            <p><i class="fa-regular fa-circle-check"></i> API Access</p>
+            
+            <p><i class="fa-regular fa-circle-check"></i> Dedicated Account Manager</p>
+        </section>
+    </div>
+    <div class="group-eight">
+        <section>
+            <ul>
+                <li><a href="#">Get Custom Pricing</a></li>
+                <li><a href="#" class="link">Select Pricing</a></li>
+            </ul>
+        </section>
+    </div>
+    <div class="group-nine">
+        <section class="form">
+            <form action="#">
+                <article >
+                    <aside class="top-form">
+                <input type="text" placeholder="Paste URL here" class="paste">
+            </aside>
+            <aside>
+                <select name="" class="select">
+                    <option value="1">Choose Domain</option>
+                    <option value="2">Domain 1</option>
+                    <option value="3">Domain 2</option>
+                    <option value="4">Domain 3</option>
+                </select>
+                <input type="text" placeholder="Type Alias here" class="alias">
+            </aside>
+            </article>
+            <article class="bottom-form">
+                <button>Trim URL <i class="fa-solid fa-wand-magic"></i></button>
+                <p>By clicking TrimURL, I agree to the Terms of Service, Privacy Policy and
+                     Use of Cookies.</p>
+                    </article>
+            </form>
+        </section>
+    </div>
+    <div class="group-ten">
+        <h1>FAQs</h1>
+        <section>
+            <aside>
+                <h3>How does URL shortening work? <span>&minus;</span></h3>
+            </aside>
+            <aside>
+                <p>URL shortening works by taking a long URL and creating a shorter,
+                     condensed version that redirects to the original URL. When a user
+                      clicks on the shortened link, they are redirected to the intended
+                       destination.</p>
+            </aside>
+        </section>
+        <section>
+            <p>Is it necessary to create an account to use the URL shortening service? <span>&plus;</span></p>
+        </section>
+        <section>
+            <p>Are the shortened links permanent? Will they expire? <span> &plus;</span></p>
+        </section>
+        <section>
+            <p>Are there any limitations on the number of URLs I can shorten? <span> &plus;</span></p>
+        </section>
+        <section>
+            <p>Can I customize the shortened URLs to reflect my brand or content?  <span>&plus;</span></p>
+        </section>
+        <section>
+            <p>Can I track the performance of my shortened URLs? <span> &plus;</span></p>
+        </section>
+        <section>
+            <p>How secure is the URL shortening service? Are the shortened links protected against spam or malicious activity? <span> &plus;</span></p>
+        </section>
+        <section>
+            <p>What is a QR code and what can it do? <span> &plus;</span></p>
+        </section>
+        <section>
+            <p>Is there an API available for integrating the URL shortening service into my own applications or websites? <span> &plus;</span></p>
+        </section>
+    </div>
+    <div>
+    <div class="group-eleven">
+        <section>
+            <article>
+            <h2>Revolutionizing Link Optimization</h2>
+            </article>
+            <article>
+                <button>Get Started</button>
+            </article>
+        </section>
+    </div>
+    <div class="vector">
+    <div class="group-twelve">
+        <section class="empty">
+            <article class="last-icons">
+            <img src="/assignments altschool/asset/logo 3.png" alt="logo"><br>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+        </article>
+        </section>
+        <section class="question">
+            <article class="last">
+                <aside>
+                <h5>Why Scissor ?</h5>
+                <ul>
+                    <li><a href="#">Scissor 101</a></li>
+                    <li><a href="#">Integrations & API</a></li>
+                    <li><a href="#">Pricing</a></li>
+                </ul>
+                </aside>
+                <aside>
+                <h5>
+                    Resources
+                </h5>
+                <ul>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Resource Library</a></li>
+                    <li><a href="#">Developers</a></li>
+                    <li><a href="#">App Connectors</a></li>
+                    <li><a href="#">Support</a></li>
+                    <li><a href="#">Trust Center</a></li>
+                    <li><a href="#">Browser Extension</a></li>
+                    <li><a href="#">Mobile App</a></li>
+                </ul>
+            </aside>
+            </article>
+            <article class="last">
+                <aside>
+                <h5>Solutions</h5>
+                <ul>
+                    <li><a href="#">Social Media</a></li>
+                    <li><a href="#">Digital Marketing</a></li>
+                    <li><a href="#">Customer Service</a></li>
+                    <li><a href="#">For Developers</a></li>   
+                </ul>
+                </aside>
+                <aside>
+                    <h5>Features</h5>
+                    <ul>
+                        <li><a href="#">Branded Links</a></li>
+                        <li><a href="#">Mobile Links</a></li>
+                        <li><a href="#"><Campaign</a></li>
+                        <li><a href="#">Management & Analytics</a></li>
+                        <li><a href="#">QR Code generation</a></li>
+
+                    </ul>
+                    </aside>
+            </article>
+            <article class="last">
+                <aside>
+                <h5>Products</h5>
+                <ul>
+                    <li><a href="#">Link Management</a></li>
+                    <li><a href="#">QR Codes</a></li>
+                    <li><a href="#">Link-in-bio</a></li>
+                </ul>
+                </aside>
+                <aside>
+                    <h5>Legal</h5>
+                    <ul>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Cookie Policy</a></li>
+                        <li><a href="#"> Terms of Service</a></li>
+                        <li><a href="#">Acceptable Use Policy</a></li>
+                        <li><a href="#">Code of Conduct</a></li>
+                    </ul>
+                    </aside>
+            </article>
+            <article>
+                <h5>Company</h5>
+                <ul>
+                    <li><a href="#">About Scissor</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Partners</a></li>
+                    <li><a href="#">Press</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Reviews</a></li>
+                </ul>
+                
+            </article>
+        </section>
+    </div>
+    <div> <p class="address">Term of Service | Security | Scissor 2023</p></div>
+</div>
+   
+</body>
+</html>
